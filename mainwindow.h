@@ -10,16 +10,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-private slots:
-    // Slot to handle the button click event
 
 private:
     DrawingCanvas *m_canvas;
-    QPushButton *m_clearButton, *m_drawButton, *m_detectButton;
+    QPushButton *m_clearButton;
+    QPushButton *m_detectButton;
+    QPushButton *m_drawButton;
 };
 
-
-#endif // MAINWINDOW_H
+#endif
